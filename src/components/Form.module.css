@@ -1,0 +1,85 @@
+.form{
+   
+}
+
+.form__container{
+    background-color: white;
+    max-width: 40rem;
+    padding: 2rem;
+    display: block;
+    margin: 0 auto;
+    
+}
+.form__container > *:not(:last-child){
+    margin-bottom: .5rem;
+}
+.form__label{
+    display: block;
+    font-weight: bold;
+
+}
+.form__input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #eee;
+    height: 1.5rem;
+
+}
+.form__input:focus{
+    border: 1px solid greenyellow;
+}
+.form.invalid .form__label{
+    color: red;
+    animation: shake .3s;
+    animation-fill-mode: forwards;
+}
+.form.invalid .form__input{
+    background-color: rgb(243, 214, 214);
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translate(0%);
+        
+    }
+    10% {
+        transform: translate(2%);
+        
+    }
+    20% {
+        transform: translate(0%);
+        
+    }
+
+    
+
+    100%{
+        transform: translate(1%);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

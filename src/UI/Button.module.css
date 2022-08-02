@@ -1,0 +1,6 @@
+.button{
+    background-color: purple;
+    color: white;
+    padding: .4rem 1rem;
+    cursor: pointer;
+}
